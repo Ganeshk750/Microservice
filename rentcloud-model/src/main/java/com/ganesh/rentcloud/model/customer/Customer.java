@@ -21,7 +21,7 @@ public class Customer {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	private String fristName;
+	private String firstName;
 	
 	private String lastName;
 	

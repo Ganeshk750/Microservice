@@ -8,9 +8,12 @@ spring:
     hibernate:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-      ddl-auto: none
+      ddl-auto: update
    # properties:
    #  hibernate:
    #   dialect: org.hibernate.dialect.MySQL55Dialect
-  application:
-    name: customer
+  
+  
+  # commenting for eureka registery
+  #application:
+  #  name: customer
