@@ -1,6 +1,7 @@
 package com.ganesh.rent.service.controller;
 
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,7 +31,7 @@ public class RentController {
 	
 	
 	@GetMapping(value="/{id}")
-	public Response getRent(@PathVariable int id, @RequestParam(required= false) String type) {
+	public Response getRent(@PathVariable int id, @RequestParam(required= false) String type)throws ExecutionException, InterruptedException {
 		
 		if(type == null) {
 			return new SampleResponce(rentService.findById(id));

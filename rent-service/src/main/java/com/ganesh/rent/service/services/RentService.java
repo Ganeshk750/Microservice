@@ -1,6 +1,7 @@
 package com.ganesh.rent.service.services;
 
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 import com.ganesh.rent.service.model.DetailResponce;
 import com.ganesh.rentcloud.model.rent.Rent;
@@ -13,5 +14,5 @@ public interface RentService {
 	
 	List<Rent> findAll();
 	
-	DetailResponce findDetailResponse(int id);
+	DetailResponce findDetailResponse(int id)throws ExecutionException, InterruptedException;;
 }
