@@ -8,10 +8,13 @@ spring:
     hibernate:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-      ddl-auto: update
+      ddl-auto: none
       
+hystrix:
+  timeout: 1000     
       
 #  application:
 #    name: rent
 #server:
 #  port: 8181
+
